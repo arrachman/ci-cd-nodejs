@@ -19,7 +19,6 @@ jobs:
       with:
         node-version: 12.x
         cache: 'pnpm'
-    - name: Install pnpm
     - run: npm install -g pnpm # Instal pnpm secara global
     - run: pnpm i
     - run: pnpm run build --if-present
